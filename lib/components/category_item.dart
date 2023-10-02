@@ -1,20 +1,15 @@
-import 'package:cardapio/screens/categories_meals_screen.dart';
 import 'package:flutter/material.dart';
 
+import '/utils/app_routes.dart';
 import '../models/category.dart';
-
 class CategoryItem extends StatelessWidget {
   final Category category;
 
   const CategoryItem(this.category);
   void _selectCategory(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_){
-          return CategoriesMealsScreen();
-        },
-      ),
-    );
+   
+    Navigator.of(context).pushNamed(AppRouter.CATEGORIES_MEALS,arguments: category);
+
   }
 
   @override
@@ -26,7 +21,7 @@ class CategoryItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(15),
         child: Text(
-          category.title,
+        category.title,
           style: Theme.of(context).textTheme.titleSmall,
         ),
         decoration: BoxDecoration(
