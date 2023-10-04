@@ -71,7 +71,7 @@ class MealDatailScreen extends StatelessWidget {
                       children: [
                         ListTile(
                           leading: CircleAvatar(
-                            backgroundColor: Colors.pink,
+                            backgroundColor:Theme.of(context).colorScheme.primary,
                             child: Text(
                               '${index + 1}',
                               style: TextStyle(color: Colors.white),
