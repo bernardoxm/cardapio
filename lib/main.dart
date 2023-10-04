@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
                 AppRouter.CATEGORIES_MEALS:(ctx) => CategoriesMealsScreen(),
                 AppRouter.MEAL_DETAIL:(ctx) => MealDatailScreen()
                  },
+                
     );
   }
 }
