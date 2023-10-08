@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 
 import '../data/dummy_data.dart';
 import '../models/category.dart';
+import '../models/meal.dart';
 class CategoriesMealsScreen extends StatelessWidget {
 
-  
+  final List<Meal> meals;
+  const CategoriesMealsScreen(this.meals);
 
   @override
   Widget build(BuildContext context) {

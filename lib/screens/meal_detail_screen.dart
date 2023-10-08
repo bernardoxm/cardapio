@@ -16,6 +16,7 @@ class MealDatailScreen extends StatelessWidget {
   Widget _createSectionContainer(Widget child) {
     return Container(
       height: 250,
+      width: 300,
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
@@ -87,6 +88,11 @@ class MealDatailScreen extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.star),
+          onPressed: (){ Navigator.of(context).pop(meal.title);},
+        ),
+        );
   }
 }

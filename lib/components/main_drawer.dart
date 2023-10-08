@@ -31,8 +31,8 @@ return ListTile(
           ),
         ),
         SizedBox(height:20 ,),
-        _createItem(Icons.restaurant, 'Refeicoes', ()=> Navigator.of(context).pushNamed(AppRouters.HOME),) ,
-         _createItem(Icons.settings, 'Configuracoes', ()=> Navigator.of(context).pushNamed(AppRouters.SETTINGS))
+        _createItem(Icons.restaurant, 'Refeicoes', ()=> Navigator.of(context).pushReplacementNamed(AppRouters.HOME),) ,
+         _createItem(Icons.settings, 'Configuracoes', ()=> Navigator.of(context).pushReplacementNamed(AppRouters.SETTINGS))
       ]),
     );
   }
